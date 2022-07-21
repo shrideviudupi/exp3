@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<style>
+
+input:hover
+{
+background-color:cyan;
+}
+input 
+{
+border-radius:5px;
+}
+
+
+</style>
+
+
+<script>  
+function validate(){  
+var username=document.getElementById("uname").value;  
+var password=document.getElementById("passwd").value;  
+  
+if (username=="admin" && password=="admin")
+{ 
+ 
+  alert("Successful!!!");  
+    
+}
+else 
+{  
+  alert("Failure Login!!!");  
+   
+  }  
+}  
+</script> 
+ 
+</head>
+
+<body>
+<center>
+ <h1>Login</h1>
+<form>  
+Username <br>
+
+<input type="text" name="name" id="uname"> <br>  <br>
+Password <br>
+ <input type="password" id="passwd"> <br>  <br>
+</div>
+<br>
+<input type="button" value="Submit" onclick="validate()">  
+
+</form> 
+</center> 
+</body>
+</html>
+
+
